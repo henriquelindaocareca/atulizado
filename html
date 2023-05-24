@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class="principal">
-        <h1>Com o combo+ você pode aproveitar o alura+ e o alura língua por um preço único.</h1>
+        <h1 id="texto">Com o combo+ você pode aproveitar o alura+ e o alura língua por um preço único.</h1>
         <div id="combo">
             <img src="./Combo.png" >
         </div>
@@ -17,23 +17,82 @@
         <img id="azul" src="./Button.png">
         </div>
         <div id="branco">
-            <img src="./Button (2).png">
+            <img src="./Button (1).png">
         </div>
     </section>
 </body>
 </html>
 
 css
-
 :root {
     --branco-principal:#FFFFFF;
     --cinza-secundario:#c0c0c0;
-    --botao-azul:#167BF7;
+    --botao-azul:#167BF7;<!DOCTYPE html>
+2
+<html lang="pt-br">
+3
+<head>
+4
+    <meta charset="UTF-8">
+5
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+6
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+7
+    <link rel="stylesheet" href="style.css">
+8
+    <title>AluraPlus</title>
+9
+</head>
+10
+<body>
+11
+    <section class="principal">
+12
+        <h1>Com o combo+ você pode aproveitar o alura+ e o alura língua por um preço único.</h1>
+13
+        <div id="combo">
+14
+            <img src="./Combo.png" >
+15
+        </div>
+16
+        <div>
+17
+        <img id="azul" src="./Button.png">
+18
+        </div>
+19
+        <div id="branco">
+20
+            <img src="./Button (2).png">
+21
+        </div>
+22
+    </section>
+23
+</body>
+24
+</html>
+25
+
     --cor-de-fundo:#00030c;
 }
 body{ 
     background-color: var(--cor-de-fundo);
 }
 #azul{
-    display: inline-block;
+    display: absolute;
+}
+#texto{
+    color: #FFFFFF;
+}
+#azul:hover{
+    transform: scale(1.08);
+    transition: transform 0.2ms linear;
+}
+#branco{
+    transform: scale(1.08);
+    transition: transform 0.2ms linear;
+    
 }
